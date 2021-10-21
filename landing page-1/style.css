@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    background: #f5f5f5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "DM Serif Display", serif;
+}
+
+header{
+    background: white;
+    padding: 1% 4%;
+}
+
+header h4 a{
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    flex: 1  1 30%;
+}
+
+.nav-item a{
+     display: block;
+     font-size: 1.2rem;
+     text-decoration: none;
+     color: black;
+     text-align: center;
+}
+.nav-item a:hover{
+    color: white;
+    background-color: hsl(256,26%,20%);
+}
+
+header nav ul li{
+    padding: 1 18px;
+    list-style: none;
+}
+
+.view-plans{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .hamburger{
+        display: inline-block;
+        padding: 0.25rem 0.75rem 0.3rem;
+        margin-left: auto;
+    }
+    .navbar-nav{
+        flex-direction: column;
+        flex: 1 1 100%;
+        display: none;
+    }
+    .navbar-nav.open{
+        display: block;
+    }
+}
+
+#intro{
+    background: hsl(256,26%,20%);
+    color: white;
+    display: flex;
+    padding: 1% 4%;
+}
+.intro-left{
+    padding: 7% 0;
+    flex: 1 1 50%;
+}
+.intro-left hr{
+    border-color: #8d8d8d;
+    width: 25%;
+}
+.intro-left h1{
+    padding: 7% 0 1%;
+    font-size: 3.5rem;
+}
+.intro-left p{
+    padding: 15 0% 5%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.intro-left button{
+    border: 1px solid white;
+    padding: 2% 7%;
+    background: hsl(256,26%,20%);
+    font-size: 1rem;
+    color: white;
+}
+.intro-left button:hover{
+   border: 1px solid hsl(256,26%,20%);
+   padding: 2% 7%;
+   background: white;
+   color: hsl(256, 26%, 20%);
+}
+.intro-right{
+    padding: 7% 0;
+    background-image: url(/images/bg-pattern-how-we-work-dekstop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    text-align: center;
+    flex: 1 1 50%;
+}
+.intro-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#about{
+    padding: 1% 4%;
+}
+#about hr{
+    margin-top: 7%;
+    border-color: #8d8d8d;
+    width: 25%;
+}
+.about-header{
+    padding: 5% 0;
+    font-size: 3rem;
+}
+.cards{
+    margin: 3% 0 8%;
+    display: flex;
+}
+.cards-header{
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top: 4%;
+}
+.cards-description{
+    font-size: 1.2rem;
+    padding: 5% 0 5% 0;
+    line-height: 1.3;
+    height: auto;
+}
+.card-1,.card-2,.card-3{
+    margin: 5% 3%;
+    flex: 1 1 30%;
+}
+.cta{
+    display: flex;
+    background: hsl(256,26%,20%);
+    color: white;
+    padding: 10% 7%;
+    justify-content: center;
+    align-items: center;
+}
+.cta-left{
+    flex: 1 1 80%;
+}
+.find-out{
+    width: 100%;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.cta-right{
+    flex: 1 1 50%;
+}
+.cta-right button{
+    border: 1px solid white;
+    padding: 2% 4%;
+    background: hsl(252,4%, 22%);
+    color: white;
+    font-size: 1em;
+    float: right;
+    margin-top: 5%;
+}
+/* footer */
+footer{
+    margin-top: 5%;
+    padding: 1% 4%;
+}
+.footer-header{
+    display: flex;
+    padding: 2% 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-header h4{
+    flex: 1 1 50%;
+}
+.social-media{
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+}
+.footer-col{
+    display: flex;
+}
+.footer-subject{
+    margin-bottom: 3%;
+    font-weight: bolder;
+}
+.footer-col ul li{
+    list-style: none;
+    line-height: 1.5rem;
+}
+.footer-company,.footer-help,.footer-contact,.footer-others{
+    flex: 1 1 25%;
+    padding: 2% 0 3%;
+}
+.fb-icon,.twitter-icon,.pinterest-icon,.instagram-icon{
+    padding: 5%;
+}
+
+@media screen and (max-width: 375px){
+    #intro{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-left h1{
+        font-size: 2.5rem;
+    }
+    .cards{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cards-description{
+        padding: 2% 5%;
+        font-size: 1.1rem;
+    }
+    .cards-header{
+        padding-top: 0;
+        font-size: 1.3rem;
+        align-items: center;
+        text-align: center;
+    }
+    #about h3{
+        text-align: center;
+    }
+    .about-header{
+        font-size: 2rem;
+    }
+    .cta{
+        flex-direction: column;
+        text-align: center;
+    }
+    .find-out{
+        font-size: 2.2rem;
+    }
+    .cta-right{
+        margin-top: 4%;
+    }
+    .cta-right button{
+        font-size: 1rem;
+    }
+    .footer-header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-header{
+        text-align: center;
+    }
+    .social-media{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-col{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* attribution */
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228,45%,44%);
+}
